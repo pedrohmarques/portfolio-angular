@@ -1,0 +1,33 @@
+:root {
+    --backgroud: #0A0A0C;
+    --foreground: #F0F0EB;
+    --card: #121216;
+    --popover: #121216;
+
+    --primary: #00E5A0;
+    --primary-foreground: #0A0A0C;
+    --secondary: #1C1C22;
+    --secondary-foreground: #F0F0EB;
+    --muted: #18181C;
+    --muted-foreground: #96969B;
+
+    --accent: #FF5C8A;
+    --destructive: #DC3C3C;
+    --border: #26262C;
+
+    --chart-1: #00E5A0;
+    --chart-2: #FF5C8A;
+    --chart-3: #78B4FF;
+    --chart-4: #FFC850;
+    --chart-5: #B478FF;
+    
+    --radius-sm: calc(0.625rem - 4px);
+    --radius-md: calc(0.625rem - 2px);
+    --radius-lg: 0.625rem;
+    --radius-xl: calc(0.625rem + 4px);
+    --radius-2xl: calc(0.625rem + 8px);
+
+    --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
