@@ -1,0 +1,29 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20rem 20rem 0 20rem;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 22rem;
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    app-about,
+    app-projects,
+    app-resume,
+    app-skills,
+    app-languages {
+        margin-bottom: 15rem;
+    }
+}

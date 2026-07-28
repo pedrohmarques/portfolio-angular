@@ -1,0 +1,30 @@
+{
+    "header": {
+        "about": "About me",
+        "project": "Project",
+        "resume": "Resume",
+        "contract": "Contact",
+        "skills": "Skills",
+        "languages": "Languages"
+    },
+    "home": {
+        "hello": "Hi, I'm",
+        "name": "Pedro Almeida",
+        "area": "Full Stack Developer",
+        "detail": "Building digital experiences with a focus on performance, design and best pratices.",
+        "contact": "Get in touch",
+        "projects": "See projects"
+    },
+    "about": {
+        "title": "About me",
+        "description": "I'm passionate about technology and turning ideas into real products. I work with modern web development, building fast, accessible and beautiful applications. Always looking for new challenges and learning opportunities."
+    },
+    "skills": {
+        "title": "Technologies",
+        "description": "My daily stack",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Databases",
+        "cloud": "DevOps & Cloud"
+    }
+}

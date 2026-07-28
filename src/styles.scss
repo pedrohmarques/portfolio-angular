@@ -1,2 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
-@use "./assets/theme"
+@use "./assets/theme";
+html,
+body, :root {
+    background-color: var(--background);
+    margin: 0px;    
+}
+
+.button-primary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--background);
+    cursor: pointer;
+
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-2xl);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+}
+
+.button-secondary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--background);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    cursor: pointer;
+
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-2xl);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+}
+
+.summary {
+    color: var(--primary);
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+    font-family: var(--font-mono);
+}
+
+.title-h1 {
+    color: var(--foreground);
+    font-size: var(--text-5xl);
+    line-height: var(--text-5xl--line-height);
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+}
+
+.title-h3 {
+    color: var(--foreground);
+    font-size: var(--text-8xl);
+    line-height: var(--text-8xl--line-height);
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+}
+
+.subtitle {
+    color: var(--muted-foreground);
+    font-size: var(--text-3xl);
+    line-height: var(--text-3xl--line-height);
+    font-family: var(--font-display);
+}
+
+.description-h1 {
+    color: var(--muted-foreground);
+    font-size: var(--text-lg);
+    line-height: var(--text-lg--line-height);
+    font-family: var(--font-display);
+}

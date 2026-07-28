@@ -1,0 +1,15 @@
+<div class="skills-container" id="skills">
+    <span class="summary">02</span>
+    <div class="title-h1">{{ 'skills.title' | transloco }}</div>
+    <div class="description-h1">{{ 'skills.description' | transloco }}</div>
+    @for(skill of skills; track skill.name) {
+        <div class="stacks-container">
+            <span class="summary">{{ 'skill.name' | transloco }}</span>
+            @for(stack of skill.stacks; track stack) {
+                <span class="stack">
+                    {{ stack }}
+                </span>
+            }
+        </div>
+    }
+</div>

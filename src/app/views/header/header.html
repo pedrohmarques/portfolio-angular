@@ -1,1 +1,27 @@
-<p>header works!</p>
+<div class="header-container">
+    <span class="name" (click)="scrollTo('home', 'start')">Pedro<span class="dot">.</span></span>
+    <div class="routes">
+        <span class="route" (click)="scrollTo('about')">{{ 'header.about' | transloco }}</span>
+        <span class="route" (click)="scrollTo('skills')">{{ 'header.skills' | transloco }}</span>
+        <span class="route" (click)="scrollTo('project')">{{ 'header.project' | transloco }}</span>
+        <span class="route" (click)="scrollTo('resume')">{{ 'header.resume' | transloco }}</span>
+        <span class="route" (click)="scrollTo('languages')">{{ 'header.languages' | transloco }}</span>
+        <span class="route" (click)="scrollTo('contract')">{{ 'header.contract' | transloco }}</span>
+    </div>
+    <div class="language-control">
+        <div class="language-pt" [class]="{
+            'actived': language() === 'pt-BR'
+        }"
+        
+        (click)="changeLanguage('pt-BR')">
+            PT
+        </div>
+        <span class="divider">/</span>
+        <div class="language-eng" [class]="{
+            'actived': language() === 'en-US'
+        }" 
+        (click)="changeLanguage('en-US')">
+            EN
+        </div>
+    </div>
+</div>

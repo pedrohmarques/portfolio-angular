@@ -1,0 +1,27 @@
+<div class="home-container" id="home">
+    <div class="details">
+        <span class="summary">
+            {{ 'home.hello' | transloco }}
+        </span>
+        <span class="title-h3">
+            {{ 'home.name' | transloco }}
+        </span>
+        <span class="subtitle">
+            {{ 'home.area' | transloco }}
+        </span>
+        <span class="description-h1">
+            {{ 'home.detail' | transloco }}
+        </span>
+        <div class="buttons">
+            <button class="button-primary">{{ 'home.contact' | transloco }}</button>
+            <button class="button-secondary">{{ 'home.projects' | transloco }}</button>
+        </div>
+    </div>
+
+    <app-about></app-about>
+    <app-skills></app-skills>
+    <app-projects></app-projects>
+    <app-resume></app-resume>
+    <app-languages></app-languages>
+    <app-contact></app-contact>
+</div>

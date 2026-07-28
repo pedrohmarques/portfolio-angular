@@ -1,0 +1,81 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    padding-block: calc(.25rem * 4);
+    padding-inline: calc(.25rem * 6);
+    margin-inline: auto;
+    color: var(--foreground);
+
+    .name {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: var(--text-lg);
+        line-height: var(--text-lg--line-height);
+        font-family: var(--font-display);
+        .dot {
+            color: var(--primary);
+            border-color: var(--border);
+        }
+    }
+
+    .routes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        .route {
+            font-family: var(--font-sans);
+            color: var(--muted-foreground);
+            font-size: var(--text-sm);
+            line-height: var(--tw-leading, var(--text-sm--line-height));
+            cursor: pointer;
+
+            transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+            transition-timing-function: var(--tw-ease, cubic-bezier(.4, 0, .2, 1));
+            transition-duration: var(--tw-duration, .15s);
+            
+            &:hover {
+                color: var(--foreground);
+            }
+        }
+    }
+
+    .language-control {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-xl);
+        padding-block: calc(.25rem * .5);
+        padding-inline: calc(.25rem * 1);
+        padding: 5px 15px;
+
+        font-size: var(--text-xs);
+        line-height: var(--text-xs--line-height);
+        font-family: var(--font-mono);
+
+        color: var(--foreground);
+
+        .divider {
+            color: var(--border);
+        }
+        .language-pt, .language-eng {
+            cursor: pointer;
+            &.actived {
+                color: var(--primary) !important;
+            }
+        }        
+    }
+}
