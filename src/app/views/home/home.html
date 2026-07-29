@@ -13,8 +13,12 @@
             {{ 'home.detail' | transloco }}
         </span>
         <div class="buttons">
-            <button class="button-primary" (click)="scrollTo('contact')">{{ 'home.contact' | transloco }}</button>
-            <button class="button-secondary" (click)="scrollTo('project')">{{ 'home.projects' | transloco }}</button>
+            <button class="button-primary" (click)="scrollTo('contact')">
+                {{ 'home.contact' | transloco }} <mat-icon svgIcon="arrow"></mat-icon>
+            </button>
+            <button class="button-secondary" (click)="scrollTo('project')">
+                {{ 'home.projects' | transloco }}
+            </button>
         </div>
     </div>
 

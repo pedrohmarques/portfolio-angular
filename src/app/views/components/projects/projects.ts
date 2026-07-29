@@ -1,30 +1,34 @@
 import { Component } from '@angular/core';
-import { TranslocoPipe } from '@jsverse/transloco';
+import { MatIconModule } from '@angular/material/icon';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-projects',
   imports: [
-    TranslocoPipe
+    TranslocoPipe,
+    MatIconModule
   ],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
 export class Projects {
 
+  constructor(private translocoService: TranslocoService){
+
+  }
+
+  get systemLanguage(): string {
+    return this.translocoService.getActiveLang()
+  }
+  
   projects = [
     {
       name: "File Process RabbitMQ",
-      description: "Sistema de processamento assíncrono de arquivos CSV e Excel utilizando arquitetura baseada em filas.",
+      descriptionPT: "Sistema de processamento assíncrono de arquivos CSV e Excel utilizando arquitetura baseada em filas.",
+      descriptionEN: "Asynchronous CSV and Excel File Processing System Built on a Queue-Based Architecture",
       stacks: ["Angular 20","RxJS", "Node.js", "Socket.IO", "Docker", "RabbitMQ"],
       github: "https://github.com/pedrohmarques/file-process-rabbitmq",
       site: ""
-    },
-    {
-      name: "File Process RabbitMQ",
-      description: "Aplicação web moderna com foco em UX e performance",
-      stacks: ["Angular 20","RxJS", "Node.js", "Socket.IO", "Docker", "RabbitMQ"],
-      github: "https://github.com/pedrohmarques/file-process-rabbitmq",
-      site: "https://github.com/pedrohmarques/file-process-rabbitmq"
     }
   ]
 

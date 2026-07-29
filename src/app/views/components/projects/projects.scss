@@ -9,8 +9,9 @@
         @include cardContainer(285px);
 
         .project-container {
-            @include card(185px);
+            @include card(100%);
             gap: 1rem;
+            justify-content: center;
             .description-h1 {
                 margin-top: 0;
             }
@@ -31,6 +32,13 @@
                 .stack {
                     @include stackClass();
                 }
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: .5rem;
             }
         }
     }

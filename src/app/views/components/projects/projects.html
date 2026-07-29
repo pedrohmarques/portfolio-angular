@@ -6,7 +6,7 @@
         @for(project of projects; track project.name) {
             <div class="project-container">
                 <span class="title-h1">{{ project.name }}</span>
-                <span class="description-h1">{{ project.description }}</span>
+                <span class="description-h1">{{ systemLanguage === "pt-BR" ? project.descriptionPT : project.descriptionEN }}</span>
                 <div class="stacks-container">
                     @for(stack of project.stacks; track stack) {
                         <span class="stack">
@@ -17,10 +17,14 @@
 
                 <div class="button-container">
                     @if(project.github) {
-                        <button class="button-tertiary" (click)="openLink(project.github)">GitHub</button>
+                        <button class="button-tertiary" (click)="openLink(project.github)">
+                            <mat-icon svgIcon="github"></mat-icon> GitHub
+                        </button>
                     }
                     @if(project.site) {
-                        <button class="button-tertiary" (click)="openLink(project.site)">{{ 'projects.live_site' | transloco }}</button>
+                        <button class="button-tertiary" (click)="openLink(project.site)">
+                            <mat-icon svgIcon="arrow"></mat-icon> {{ 'projects.live_site' | transloco }}
+                        </button>
                     }
                 </div>
             </div>            

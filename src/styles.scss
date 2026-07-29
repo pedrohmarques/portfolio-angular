@@ -7,6 +7,11 @@ body, :root {
 }
 
 .button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -19,6 +24,11 @@ body, :root {
     font-family: var(--font-sans);
     font-size: var(--text-base);
     line-height: var(--text-base--line-height);
+
+    mat-icon {
+        width: 18px !important;
+        height: 18px !important;
+    }
 }
 
 .button-secondary {
@@ -38,6 +48,11 @@ body, :root {
 }
 
 .button-tertiary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
     border: none;
     background: transparent;
     color: var(--foreground);
@@ -49,6 +64,11 @@ body, :root {
 
     &:hover {
         color: var(--primary);
+    }
+
+    mat-icon {
+        width: 14px !important;
+        height: 14px !important;
     }
 }
 

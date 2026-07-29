@@ -6,6 +6,7 @@ import { Resume } from '../components/resume/resume';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { Skills } from '../components/skills/skills';
 import { Languages } from '../components/languages/languages';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,8 @@ import { Languages } from '../components/languages/languages';
     Resume,
     Skills,
     Languages,
-    TranslocoPipe
+    TranslocoPipe,
+    MatIconModule
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
