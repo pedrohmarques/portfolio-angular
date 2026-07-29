@@ -7,6 +7,9 @@
         "skills": "Skills",
         "languages": "Languages"
     },
+    "footer": {
+        "desc": "Crafted with care"
+    },
     "home": {
         "hello": "Hi, I'm",
         "name": "Pedro Almeida",
@@ -26,5 +29,29 @@
         "backend": "Backend",
         "database": "Databases",
         "cloud": "DevOps & Cloud"
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Some of the work I've built",
+        "live_site": "Live site"
+    },
+    "languages": {
+        "title": "Languages",
+        "description": "Languages I speak",
+        "pt": {
+            "title": "Portuguese",
+            "level": "NATIVE"
+        },
+        "en": {
+            "title": "English",
+            "level": "ADVANCED"
+        }
+    },
+    "contact": {
+        "title": "Let's talk",
+        "description": "I'm available for freelance projects and new opportunities.",
+        "emailSubject": "Let's talk about a project opportunity",
+        "emailMessage": "Hello, Pedro!\n\nI came across your portfolio and would like to discuss a possible collaboration, freelance project, or job opportunity.\n\nI would like to learn more about your experience and explore how we could work together.\n\nLooking forward to hearing from you.\n\nThank you!",
+        "wppMessage": "Hello, Pedro! How are you?\n\nI came across your portfolio and would like to talk about a possible freelance project or job opportunity.\n\nWould you be available to discuss how we could collaborate?"
     }
 }

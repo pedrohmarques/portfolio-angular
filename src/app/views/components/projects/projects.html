@@ -1,1 +1,29 @@
-<p>projects works!</p>
+<div class="projects-container" id="project">
+    <span class="summary">03</span>
+    <div class="title-h1">{{ 'projects.title' | transloco }}</div>
+    <!-- <div class="description-h1">{{ 'projects.description' | transloco }}</div> -->
+    <div class="projects-main">
+        @for(project of projects; track project.name) {
+            <div class="project-container">
+                <span class="title-h1">{{ project.name }}</span>
+                <span class="description-h1">{{ project.description }}</span>
+                <div class="stacks-container">
+                    @for(stack of project.stacks; track stack) {
+                        <span class="stack">
+                            {{ stack }}
+                        </span>
+                    }
+                </div>
+
+                <div class="button-container">
+                    @if(project.github) {
+                        <button class="button-tertiary" (click)="openLink(project.github)">GitHub</button>
+                    }
+                    @if(project.site) {
+                        <button class="button-tertiary" (click)="openLink(project.site)">{{ 'projects.live_site' | transloco }}</button>
+                    }
+                </div>
+            </div>            
+        }
+    </div>    
+</div>

@@ -22,5 +22,10 @@ import { Languages } from '../components/languages/languages';
   styleUrl: './home.scss',
 })
 export class Home {
-
+  scrollTo(id: string, position: ScrollLogicalPosition = 'center'): void {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+      block: position
+    });
+  }
 }

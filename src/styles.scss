@@ -37,6 +37,21 @@ body, :root {
     line-height: var(--text-base--line-height);
 }
 
+.button-tertiary {
+    border: none;
+    background: transparent;
+    color: var(--foreground);
+    cursor: pointer;
+
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+
 .summary {
     color: var(--primary);
     font-size: var(--text-sm);

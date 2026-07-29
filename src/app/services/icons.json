@@ -1,0 +1,22 @@
+[
+    {
+      "name": "arrow",
+      "path": "assets/icons/arrow.svg"
+    },
+    {
+      "name": "email",
+      "path": "assets/icons/email.svg"
+    },
+    {
+      "name": "github",
+      "path": "assets/icons/github.svg"
+    },
+    {
+      "name": "instagram",
+      "path": "assets/icons/instagram.svg"
+    },
+    {
+      "name": "wpp",
+      "path": "assets/icons/wpp.svg"
+    }
+]

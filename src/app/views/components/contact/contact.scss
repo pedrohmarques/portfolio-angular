@@ -1,0 +1,89 @@
+@use "../../../../assets/mixins.scss" as *;
+
+.contact-container {
+    .description-h1 {
+        margin-top: 2rem;
+    }
+
+    .contacts {
+        @include cardContainer(400px);
+
+        .card {
+            @include card(40px);
+
+            &:hover {
+                .main {
+                    .icon-container {
+                        background-color: var(--primary);
+                        color: var(--background);
+                    }
+                    .icon-arrow {
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            .main {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+
+                .icon-container {
+                    background-color: var(--secondary);
+                    color: var(--foreground);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 3.40282e38px;
+
+                    width: calc(.25rem * 10);
+                    height: calc(.25rem * 10);
+
+                    mat-icon {
+                        width: 18px !important;
+                        height: 18px !important;
+                    }
+                }
+
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    .title {
+                        color: var(--muted-foreground);
+                        font-size: var(--text-xs);
+                        line-height: var(--tw-leading, var(--text-xs--line-height));
+                        font-family: var(--font-mono);
+                        letter-spacing: .1em;
+                    }
+    
+                    .descripition {
+                        font-weight: var(--font-weight-medium);
+                        color: var(--foreground);
+                        font-size: var(--text-base);
+                        line-height: var(--tw-leading, var(--text-base--line-height));
+                        font-family: var(--font-sans);
+                    }
+                }
+
+                .icon-arrow {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-left: auto;
+
+                    color: var(--muted-foreground);
+
+                    mat-icon {
+                        width: 18px !important;
+                        height: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+}

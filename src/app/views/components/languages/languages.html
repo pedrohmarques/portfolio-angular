@@ -1,1 +1,16 @@
-<p>languages works!</p>
+<div class="languages-container" id="language">
+    <span class="summary">05</span>
+    <div class="title-h1">{{ 'languages.title' | transloco }}</div>
+    <!-- <div class="description-h1">{{ 'skills.description' | transloco }}</div> -->
+    <div class="card-container">
+        @for(language of languages; track language.language) {
+            <div class="card">
+                <span class="language">{{ language.language }}</span>
+                <div class="details">
+                    <span class="title-h1">{{ ('languages.' + language.translocoObject + '.title') | transloco }}</span>
+                    <span class="level">{{ ('languages.' + language.translocoObject + '.level') | transloco }}</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>

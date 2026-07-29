@@ -1,0 +1,52 @@
+@use "../../../../assets/mixins.scss" as *;
+
+.languages-container {
+
+    .card-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        .card {
+            @include card(50px);
+            flex-direction: row;
+            gap: 1rem;
+            width: 250px;
+            min-width: 250px;
+
+            .language {
+                font-size: var(--text-3xl);
+                line-height: var(--tw-leading, var(--text-3xl--line-height));
+                color: var(--foreground);
+                font-family: var(--font-sans);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto 0;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                .title-h1 {
+                    font-size: var(--text-lg);
+                    line-height: var(--tw-leading, var(--text-lg--line-height));
+                }
+
+                .level {
+                    font-size: var(--text-xs);
+                    line-height: var(--tw-leading, var(--text-xs--line-height));
+                    color: var(--primary);
+                    font-family: var(--font-mono);
+                    letter-spacing: .1em;
+                }
+            }
+        }
+    }
+}

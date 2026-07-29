@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<div class="contact-container" id="contact">
+    <span class="summary">06</span>
+    <div class="title-h1">{{ 'contact.title' | transloco }}</div>
+    <div class="description-h1">{{ 'contact.description' | transloco }}</div>
+    <div class="contacts">
+        @for(contact of contacts; track contact.title) {
+            <div class="card" (click)="redirect(contact)">
+                <div class="main">
+                    <div class="icon-container">
+                        <mat-icon [svgIcon]="contact.icon"></mat-icon>
+                    </div>
+                    <div class="details">
+                        <span class="title">{{ contact.title }}</span>
+                        <span class="descripition">{{ contact.description }}</span>
+                    </div>
+                    <div class="icon-arrow">
+                        <mat-icon svgIcon="arrow"></mat-icon>
+                    </div>
+                </div>
+                
+            </div>
+        }
+    </div>
+</div>

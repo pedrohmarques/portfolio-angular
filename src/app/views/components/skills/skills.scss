@@ -1,5 +1,36 @@
+@use "../../../../assets/mixins.scss" as *;
+
 .skills-container {
     .description-h1 {
         margin-top: 2rem;
     }
+
+    .stacks-main {
+        @include cardContainer(258px);
+
+        .stacks-container {
+            @include card(150px);
+            gap: 1.5rem;
+            .summary {
+                font-weight: var(--font-weight-semibold); 
+                font-size: var(--text-lg);
+                line-height: var(--text-lg--line-height);
+            }
+
+            .stack-main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 1rem;
+
+                .stack {
+                    @include stackClass();
+                }
+            }
+
+            
+        }
+    }
+    
 }

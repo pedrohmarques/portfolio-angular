@@ -1,0 +1,17 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    padding-block: calc(.25rem * 4);
+    padding-inline: calc(.25rem * 6);
+    margin-inline: auto;
+    color: var(--muted-foreground);
+
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    font-family: var(--font-mono);
+}

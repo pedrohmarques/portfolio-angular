@@ -1,0 +1,40 @@
+@mixin cardContainer($width, $columns: auto-fit) {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($width, 1fr));
+    column-gap: 70px;
+    row-gap: 24px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+@mixin card($height) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;    
+
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+
+    width: 100%;
+    height: $height;
+    padding: 1rem;
+
+    &:hover {
+        border-color: var(--primary);
+    }
+}
+
+@mixin stackClass() {
+    color: var(--secondary-foreground);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    font-family: var(--font-mono);
+
+    background-color: var(--secondary);
+    border-radius: 3.40282e38px;
+    padding-block: calc(.25rem * 1);
+    padding-inline: calc(.25rem * 2);
+}
