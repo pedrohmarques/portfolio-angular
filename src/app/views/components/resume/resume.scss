@@ -6,9 +6,10 @@
     .content {
         margin-top: 3rem;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         gap: 3rem;
 
         .summary {
@@ -32,6 +33,13 @@
                 justify-content: flex-start;
                 align-items: flex-start;
 
+                border-left: 1px solid var(--border);
+                padding-left: 1rem;
+
+                &:hover {
+                    border-color: var(--primary);
+                }
+
                 .year {
                     color: var(--muted-foreground);
                     font-size: var(--text-xs);
@@ -52,6 +60,59 @@
                     color: var(--muted-foreground);
                     font-size: var(--text-sm);
                     line-height: var(--tw-leading, var(--text-sm--line-height));
+                }
+            }
+        }
+
+        .professional-resume {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .card-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 1.5rem;
+
+                .card {
+                    @include card(40px);
+                    gap: 1rem;
+                    cursor: pointer;
+                    max-width: 45rem;
+
+                    .header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+
+                        .title-h1 {
+                            font-size: var(--text-2xl);
+                            line-height: var(--tw-leading, var(--text-2xl--line-height));
+                        }
+
+                        .year {
+                            color: var(--primary);
+                            font-family: var(--font-mono);
+                            font-size: var(--text-xs);
+                            line-height: var(--tw-leading, var(--text-xs--line-height));
+                        }
+                    }
+
+                    .title-h1 {
+                        font-size: var(--text-base);
+                        line-height: var(--tw-leading, var(--text-base--line-height));
+                    }
+
+                    .button-tertiary {
+                        color: var(--primary);
+                        letter-spacing: .1em;
+                        font-family: var(--font-mono);
+                    }
                 }
             }
         }
