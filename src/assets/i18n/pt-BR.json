@@ -14,13 +14,13 @@
         "hello": "Olá, eu sou",
         "name": "Pedro Almeida",
         "area": "Desenvolvedor Full Stack",
-        "detail": "Construindo experiências digitais com foco em performance, design e boas práticas.",
+        "detail": "Desenvolvo experiências digitais que unem performance, design e tecnologia. Meu objetivo é criar soluções elegantes, eficientes e bem estruturadas, entregando interfaces que proporcionam uma ótima experiência para os usuários.",
         "contact": "Fale comigo",
         "projects": "Ver projetos"
     },
     "about": {
         "title": "Sobre mim",
-        "description": "Sou apaixonado por tecnologia e por transformar ideias em produtos reais. Trabalho com desenvolvimento web moderno, criando aplicações rápidas, acessíveis e bonitas. Sempre em busca de novos desafios e aprendizados."
+        "description": "Atuo como desenvolvedor de software desde 2017. Sou formado como Técnico em Informática pela Utramig e estou concluindo o Bacharelado em Engenharia de Software. Sou apaixonado por tecnologia e pelo desenvolvimento de soluções digitais eficientes, buscando sempre evoluir meus conhecimentos e explorar novas ferramentas e tecnologias. Possuo experiência em Front-end e Back-end, criando aplicações modernas, escaláveis e bem estruturadas. Também utilizo Inteligência Artificial como uma aliada no desenvolvimento, aumentando a produtividade e otimizando processos para entregar soluções com mais qualidade e agilidade. Além da tecnologia, gosto de viajar, conhecer novos lugares, ouvir e tocar músicas."
     },
     "skills": {
         "title": "Tecnologias",

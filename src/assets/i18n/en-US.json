@@ -14,13 +14,13 @@
         "hello": "Hi, I'm",
         "name": "Pedro Almeida",
         "area": "Full Stack Developer",
-        "detail": "Building digital experiences with a focus on performance, design and best pratices.",
+        "detail": "I develop digital experiences that combine performance, design, and technology. My goal is to create elegant, efficient, and well-structured solutions, delivering interfaces that provide an exceptional user experience.",
         "contact": "Get in touch",
         "projects": "See projects"
     },
     "about": {
         "title": "About me",
-        "description": "I'm passionate about technology and turning ideas into real products. I work with modern web development, building fast, accessible and beautiful applications. Always looking for new challenges and learning opportunities."
+        "description": "I have been working as a software developer since 2017. I hold a degree in Information Technology from Utramig and I am currently completing my Bachelor's degree in Software Engineering. I am passionate about technology and building efficient digital solutions, constantly seeking to improve my skills and explore new tools and technologies. I have experience in both Front-end and Back-end development, creating modern, scalable, and well-structured applications. I also use Artificial Intelligence as an ally in the development process, improving productivity and optimizing workflows to deliver higher-quality solutions faster. Beyond technology, I enjoy traveling, discovering new places, listening to and playing music."
     },
     "skills": {
         "title": "Technologies",
