@@ -1,11 +1,14 @@
 @mixin cardContainer($width, $columns: auto-fit) {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat($columns, minmax($width, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min($width, 100%), 1fr));
     column-gap: 70px;
     row-gap: 24px;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 @mixin card($height) {
@@ -17,6 +20,7 @@
     background-color: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius-2xl);
+    box-sizing: border-box;
 
     width: 100%;
     padding: 1rem;

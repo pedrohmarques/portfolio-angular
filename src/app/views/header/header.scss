@@ -12,6 +12,7 @@
     padding-inline: calc(.25rem * 6);
     margin-inline: auto;
     color: var(--foreground);
+    box-sizing: border-box;
 
     .name {
         cursor: pointer;
