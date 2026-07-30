@@ -35,6 +35,11 @@
         "description": "Some of the work I've built",
         "live_site": "Live site"
     },
+    "resume": {
+        "title": "Resume",
+        "titleProfessional": "Professional Experience",
+        "titleFormation": "Education"
+    },
     "languages": {
         "title": "Languages",
         "description": "Languages I speak",

@@ -1,0 +1,59 @@
+@use "../../../../assets/mixins.scss" as *;
+
+.resume-container {
+ 
+    
+    .content {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+
+        .summary {
+            font-family: var(--font-sans);
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--text-xl);
+            line-height: var(--tw-leading, var(--text-xl--line-height));
+        }
+
+        .formation-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .education-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .year {
+                    color: var(--muted-foreground);
+                    font-size: var(--text-xs);
+                    line-height: var(--tw-leading, var(--text-xs--line-height));
+                    font-family: var(--font-mono);
+                }
+
+                .education {
+                    font-family: var(--font-sans);
+                    color: var(--foreground);
+                    font-weight: var(--font-weight-medium);
+                    font-size: var(--text-base);
+                    line-height: var(--tw-leading, var(--text-base--line-height));
+                }
+
+                .location {
+                    font-family: var(--font-sans);
+                    color: var(--muted-foreground);
+                    font-size: var(--text-sm);
+                    line-height: var(--tw-leading, var(--text-sm--line-height));
+                }
+            }
+        }
+    }
+}

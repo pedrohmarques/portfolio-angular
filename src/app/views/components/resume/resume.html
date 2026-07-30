@@ -1,1 +1,20 @@
-<p>resume works!</p>
+<div class="resume-container" id="resume">
+    <span class="summary">04</span>
+    <div class="title-h1">{{ 'resume.title' | transloco }}</div>
+    
+    <div class="content">
+        <div class="professional-resume">
+            <span class="summary">{{ 'resume.titleProfessional' | transloco }}</span>
+        </div>
+        <div class="formation-container">
+            <span class="summary">{{ 'resume.titleFormation' | transloco }}</span>
+            @for(education of educations; track education.education) {
+                <div class="education-content">
+                    <span class="year">{{ education.year }}</span>
+                    <span class="education">{{ education.education }}</span>
+                    <span class="location">{{ education.location }}</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>

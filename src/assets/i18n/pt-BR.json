@@ -35,6 +35,11 @@
         "description": "Alguns dos projetos que desenvolvi",
         "live_site": "Ver site"
     },
+    "resume": {
+        "title": "Trajetória",
+        "titleProfessional": "Experiência Profissional",
+        "titleFormation": "Formação Acadêmica"
+    },
     "languages": {
         "title": "Idiomas",
         "pt": {
