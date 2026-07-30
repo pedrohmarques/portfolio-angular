@@ -6,7 +6,7 @@
     }
 
     .contacts {
-        @include cardContainer(400px);
+        @include cardContainer(400px); 
 
         .card {
             @include card(40px);
