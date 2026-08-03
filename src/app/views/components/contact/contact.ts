@@ -24,9 +24,9 @@ export class Contact {
       description: "pdhmarques@gmail.com"
     },
     {
-      icon: "instagram",
-      title: "INSTAGRAM",
-      description: "@_phmarks"
+      icon: "linkedin",
+      title: "LINKEDIN",
+      description: "linkedin.com/in/pedro-a-582289134/"
     },
     {
       icon: "wpp",
@@ -62,8 +62,8 @@ export class Contact {
         );
       },
   
-      instagram: () => {
-        window.open('https://instagram.com/_phmarks', '_blank');
+      linkedin: () => {
+        window.open('https://www.linkedin.com/in/pedro-a-582289134/', '_blank');
       },
   
       github: () => {

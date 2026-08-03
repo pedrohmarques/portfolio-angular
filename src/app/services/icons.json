@@ -18,5 +18,9 @@
     {
       "name": "wpp",
       "path": "assets/icons/wpp.svg"
+    }, 
+    {
+      "name": "linkedin",
+      "path": "assets/icons/linkedin.svg"
     }
 ]
