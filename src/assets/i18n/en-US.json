@@ -38,7 +38,12 @@
     "resume": {
         "title": "Resume",
         "titleProfessional": "Professional Experience",
-        "titleFormation": "Education"
+        "titleFormation": "Education",
+        "viewDetails": "VIEW DETAILS",
+        "responsibilities": "Responsibilities",
+        "achievements": "Achievements",
+        "technologies": "Technologies",
+        "close": "Close"
     },
     "languages": {
         "title": "Languages",

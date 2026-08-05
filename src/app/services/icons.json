@@ -22,5 +22,9 @@
     {
       "name": "linkedin",
       "path": "assets/icons/linkedin.svg"
+    },
+    {
+      "name": "close",
+      "path": "assets/icons/close.svg"
     }
 ]

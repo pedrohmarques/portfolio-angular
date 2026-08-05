@@ -7,16 +7,16 @@
             <span class="summary">{{ 'resume.titleProfessional' | transloco }}</span>
             <div class="card-container">
                 @for(work of works; track work.enterprise) {
-                    <div class="card">
+                    <div class="card" (click)="openWorkDetail(work)">
                         <div class="header">
                             <span class="title-h1">{{ work.enterprise }}</span>
                             <span class="year">{{ work.year }}</span>
                         </div>
                         <span class="title-h1">{{ systemLanguage === 'pt-BR' ? work.vocation : work.vocationEN }}</span>
                         <span class="description-h1">{{ systemLanguage === 'pt-BR' ? work.description : work.descriptionEN }}</span>
-    
+
                         <div class="button-container">
-                            <button class="button-tertiary">VER DETALHES <mat-icon svgIcon="arrow"></mat-icon></button>
+                            <button class="button-tertiary" type="button">{{ 'resume.viewDetails' | transloco }} <mat-icon svgIcon="arrow"></mat-icon></button>
                         </div>
                     </div>
                 }

@@ -1,0 +1,48 @@
+<div class="work-dialog">
+    <div class="work-dialog-header">
+        <button class="close-button" type="button" [attr.aria-label]="'resume.close' | transloco" (click)="close()">
+            <mat-icon svgIcon="close"></mat-icon>
+        </button>
+
+        <span class="year">{{ data.year }}</span>
+        <span class="title-h1">{{ data.enterprise }}</span>
+        <span class="vocation">{{ systemLanguage === 'pt-BR' ? data.vocation : data.vocationEN }}</span>
+    </div>
+
+    <div class="work-dialog-content">
+        <span class="description-h1">{{ systemLanguage === 'pt-BR' ? data.description : data.descriptionEN }}</span>
+
+        @if(data.responsibilities.length) {
+            <div class="section">
+                <span class="section-title">{{ 'resume.responsibilities' | transloco }}</span>
+                <ul>
+                    @for(item of (systemLanguage === 'pt-BR' ? data.responsibilities : data.responsibilitiesEN); track item) {
+                        <li>{{ item }}</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        @if(data.achievements.length) {
+            <div class="section">
+                <span class="section-title">{{ 'resume.achievements' | transloco }}</span>
+                <ul>
+                    @for(item of (systemLanguage === 'pt-BR' ? data.achievements : data.achievementsEN); track item) {
+                        <li>{{ item }}</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        @if(data.technologies.length) {
+            <div class="section">
+                <span class="section-title">{{ 'resume.technologies' | transloco }}</span>
+                <div class="technologies-container">
+                    @for(tech of data.technologies; track tech) {
+                        <span class="stack">{{ tech }}</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

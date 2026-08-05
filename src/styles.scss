@@ -108,3 +108,17 @@ body, :root {
     line-height: var(--text-lg--line-height);
     font-family: var(--font-display);
 }
+
+.work-detail-dialog-panel {
+    max-width: none !important;
+
+    .mat-mdc-dialog-container .mdc-dialog__surface {
+        background: transparent;
+        box-shadow: none;
+        border-radius: var(--radius-2xl);
+        padding: 0;
+        overflow: visible;
+        max-width: none;
+        width: 100%;
+    }
+}

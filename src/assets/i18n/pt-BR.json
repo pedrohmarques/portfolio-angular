@@ -38,7 +38,12 @@
     "resume": {
         "title": "Trajetória",
         "titleProfessional": "Experiência Profissional",
-        "titleFormation": "Formação Acadêmica"
+        "titleFormation": "Formação Acadêmica",
+        "viewDetails": "VER DETALHES",
+        "responsibilities": "Responsabilidades",
+        "achievements": "Conquistas",
+        "technologies": "Tecnologias",
+        "close": "Fechar"
     },
     "languages": {
         "title": "Idiomas",

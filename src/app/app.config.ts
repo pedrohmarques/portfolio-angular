@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { provideTransloco } from '@jsverse/transloco';
 import { TranslocoHttpLoader } from './core/transloco-loader';
 import { provideHttpClient } from '@angular/common/http';
+import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import { SvgIconService } from './services/svg-icon.service';
 
 export const appConfig: ApplicationConfig = {
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideHttpClient(),
+    provideNoopAnimations(),
     provideTransloco({
       config: {
         availableLangs: ['pt-BR', 'en-US'],

@@ -1,0 +1,157 @@
+@use "../../../../../assets/mixins.scss" as *;
+
+.work-dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    box-sizing: border-box;
+
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .work-dialog-header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .5rem;
+
+        background-color: var(--card);
+        border-bottom: 1px solid var(--border);
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem 3.5rem 1.25rem 2.5rem;
+
+        .close-button {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--foreground);
+            cursor: pointer;
+
+            &:hover {
+                border-color: var(--primary);
+                color: var(--primary);
+            }
+
+            mat-icon {
+                width: 16px !important;
+                height: 16px !important;
+                font-size: 16px;
+            }
+        }
+
+        .year {
+            color: var(--primary);
+            font-family: var(--font-mono);
+            font-size: var(--text-xs);
+            line-height: var(--tw-leading, var(--text-xs--line-height));
+        }
+
+        .title-h1 {
+            width: 100%;
+            font-size: var(--text-3xl);
+            line-height: var(--tw-leading, var(--text-3xl--line-height));
+            overflow-wrap: break-word;
+        }
+
+        .vocation {
+            font-family: var(--font-sans);
+            color: var(--foreground);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--text-lg);
+            line-height: var(--tw-leading, var(--text-lg--line-height));
+        }
+    }
+
+    .work-dialog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+
+        .description-h1 {
+            font-size: var(--text-base);
+            line-height: var(--tw-leading, var(--text-base--line-height));
+            overflow-wrap: break-word;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: .75rem;
+            width: 100%;
+            box-sizing: border-box;
+
+            .section-title {
+                color: var(--primary);
+                font-family: var(--font-mono);
+                font-weight: var(--font-weight-semibold);
+                font-size: var(--text-xs);
+                letter-spacing: .1em;
+                line-height: var(--tw-leading, var(--text-xs--line-height));
+                text-transform: uppercase;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 1.25rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                width: 100%;
+                box-sizing: border-box;
+
+                li {
+                    color: var(--foreground);
+                    font-family: var(--font-sans);
+                    font-size: var(--text-base);
+                    line-height: var(--tw-leading, var(--text-base--line-height));
+                    overflow-wrap: break-word;
+                }
+            }
+
+            .technologies-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: .75rem;
+                width: 100%;
+
+                .stack {
+                    @include stackClass();
+                }
+            }
+        }
+    }
+}
